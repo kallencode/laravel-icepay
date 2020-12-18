@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\Skeleton\Commands;
+namespace Kallencode\Icepay\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class IcepayCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'icepay';
 
     public $description = 'My command';
 

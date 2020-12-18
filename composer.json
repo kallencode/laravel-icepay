@@ -1,22 +1,23 @@
 {
-    "name": ":vendor_name/:package_name",
-    "description": ":package_description",
+    "name": "kallencode/laravel-icepay",
+    "description": "",
     "keywords": [
-        ":vendor_name",
-        ":package_name"
+        "kallencode",
+        "laravel-icepay"
     ],
-    "homepage": "https://github.com/:vendor_name/:package_name",
+    "homepage": "https://github.com/kallencode/laravel-icepay",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
-            "homepage": "https://spatie.be",
+            "name": "Roelof Kallenkoot",
+            "email": "info@kallencode.nl",
+            "homepage": "https://kallencode.nl",
             "role": "Developer"
         }
     ],
     "require": {
         "php": "^7.4|^8.0",
+        "icepay/api": "^0.0.1",
         "illuminate/contracts": "^8.0"
     },
     "require-dev": {
@@ -25,13 +26,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Skeleton\\": "src",
-            "Spatie\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Kallencode\\Icepay\\": "src",
+            "Kallencode\\Icepay\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Skeleton\\Tests\\": "tests"
+            "Kallencode\\Icepay\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -45,23 +46,13 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\Skeleton\\SkeletonServiceProvider"
+                "Kallencode\\Icepay\\IcepayServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "Spatie\\Skeleton\\SkeletonFacade"
+                "Icepay": "Kallencode\\Icepay\\Facades\\Icepay"
             }
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true,
-    "funding": [
-        {
-            "type": "github",
-            "url": "https://github.com/sponsors/spatie"
-        },
-        {
-            "type": "other",
-            "url": "https://spatie.be/open-source/support-us"
-        }
-    ]
+    "prefer-stable": true
 }
