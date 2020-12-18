@@ -35,9 +35,27 @@ return [
 ## Usage
 
 ```php
-$licepay = new Kallencode\Icepay();
-echo $licepay->echoPhrase('Hello, Kallencode!');
+$checkoutResponse = Icepay::checkout([
+    'Amount'        => 1000,
+    'Currency'      => 'EUR',
+    'Paymentmethod' => 'IDEAL',
+    'Issuer'        => 'ABNAMRO',
+    'Country'       => 'NL',
+    'Language'      => 'NL',
+    'Description'   => 'This is a example description',
+    'OrderID'       => '1',
+    'Reference'     => '1'
+])
+
+
+$paymentID = 123123;
+$paymentResponse = Icepay::getPayment($paymentID);
+
 ```
+
+## Documentation
+
+https://icepay.com/app/uploads/ICEPAY-REST-API-Implementation-manual-v1.22.pdf
 
 ## Testing
 

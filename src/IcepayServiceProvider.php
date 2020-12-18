@@ -32,7 +32,6 @@ class IcepayServiceProvider extends ServiceProvider
             $this->guardAgainstInvalidConfig($config);
             $client = app(IcepayClient::class);
 
-
             return new Icepay($client);
         });
 
