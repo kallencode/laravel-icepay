@@ -2,8 +2,8 @@
 
 namespace Kallencode\Icepay;
 
-use InvalidArgumentException;
 use Illuminate\Support\ServiceProvider;
+use InvalidArgumentException;
 
 class IcepayServiceProvider extends ServiceProvider
 {
