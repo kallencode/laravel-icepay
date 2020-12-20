@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Facade;
 /**
  * @see \Kallencode\Icepay\Icepay
  */
-class IcepayFacade extends Facade
+class Icepay extends Facade
 {
     protected static function getFacadeAccessor()
     {
